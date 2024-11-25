@@ -51,7 +51,7 @@
                         </li>
 
                         <li class="sidebar-item  has-sub">
-                            <a href="/kelola_pelamar" class='sidebar-link'>
+                            <a href="/kelolapelamar" class='sidebar-link'>
                                 <i class="bi bi-pen-fill"></i>
                                 <span>Kelola Perusahaan</span>
                             </a>
