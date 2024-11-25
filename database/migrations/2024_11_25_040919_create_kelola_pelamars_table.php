@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('kelola_pelamars', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->date('tgl_lahir'); 
+            $table->text('alamat_sekarang');
+            $table->string('email');
+            $table->enum('jenis_kelamin', ['Laki-laki', 'Perempuan']);
+            $table->string('kompetensi');
+            $table->string('sertifikat');
+            $table->string('cv');
+            $table->date('tanggal_verifikasi');
             $table->timestamps();
         });
     }
