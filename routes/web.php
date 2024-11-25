@@ -19,7 +19,7 @@ use App\Http\Controllers\LamarController;
 
 
 
-Route::resource('kelolapelamar',KelolaPelamarController::class);
+
 Route::resource('pelamar',PelamarController::class);
 Route::resource('pengunjung',PengunjungController::class);
 Route::resource('perusahaan',PerusahaanController::class);
