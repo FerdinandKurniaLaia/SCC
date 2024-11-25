@@ -2,7 +2,7 @@
 
 namespace App\Policies;
 
-use App\Models\Kelola_Pelamar;
+use App\Models\KelolaPelamar;
 use App\Models\User;
 use Illuminate\Auth\Access\Response;
 
@@ -19,7 +19,7 @@ class KelolaPelamarPolicy
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, Kelola_Pelamar $kelolaPelamar): bool
+    public function view(User $user, KelolaPelamar $kelolaPelamar): bool
     {
         //
     }
@@ -35,7 +35,7 @@ class KelolaPelamarPolicy
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, Kelola_Pelamar $kelolaPelamar): bool
+    public function update(User $user, KelolaPelamar $kelolaPelamar): bool
     {
         //
     }
@@ -43,7 +43,7 @@ class KelolaPelamarPolicy
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, Kelola_Pelamar $kelolaPelamar): bool
+    public function delete(User $user, KelolaPelamar $kelolaPelamar): bool
     {
         //
     }
@@ -51,7 +51,7 @@ class KelolaPelamarPolicy
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, Kelola_Pelamar $kelolaPelamar): bool
+    public function restore(User $user, KelolaPelamar $kelolaPelamar): bool
     {
         //
     }
@@ -59,7 +59,7 @@ class KelolaPelamarPolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, Kelola_Pelamar $kelolaPelamar): bool
+    public function forceDelete(User $user, KelolaPelamar $kelolaPelamar): bool
     {
         //
     }
