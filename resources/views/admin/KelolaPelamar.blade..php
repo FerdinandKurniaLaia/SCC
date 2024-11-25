@@ -70,7 +70,7 @@
                                             @csrf
                                             @method('delete')
                                             <button class="btn btn-danger btn-sm ml-2"
-                                                onclick="return confirm('Yakin ingin menghapus data?')">HAPUS</button>
+                                                onclick="return confirm('Yakin ingin menghapus data?')">HAsssPUS</button>
                                         </form>
                                     </td>
                                 </tr>
