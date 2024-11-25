@@ -12,14 +12,14 @@
             <div class="page-title">
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-1 order-last">
-                        <h3>DataTable</h3>
+                        <h3>Data Pelamar</h3>
                         <p class="text-subtitle text-muted">For user to check they list</p>
                     </div>
                     <div class="col-12 col-md-6 order-md-2 order-first">
                         <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">DataTable</li>
+                                <li class="breadcrumb-item active" aria-current="page">Data Pelamar</li>
                             </ol>
                         </nav>
                     </div>
@@ -33,7 +33,7 @@
                     <div class="row mb-3 mt-3">
                         <div class="col-md-6">
 
-                            <a href="#" class="btn btn-primary btn-sm">Tambah Poli</a>
+                            <a href="#" class="btn btn-primary btn-sm">Tambah Pelamar</a>
 
                         </div>
                     </div>
@@ -43,27 +43,28 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Perusahaan</th>
-                                    <th>Jenis Industri</th>
+                                    <th>Tgl Lahir</th>
                                     <th>Email</th>
-                                    <th>Negara</th>
-                                    <th>Provinsi</th>
-                                    <th>Kabupaten</th>
-                                    <th>Kota</th>
-                                    <th>Tahun Berdiri</th>
+                                    <th>Jenis Kelamin</th>
+                                    <th>kompetensi</th>
+                                    <th>Sertifikat</th>
+                                    <th>cd</th>
+                                    <th>Tanggal Verikasi</th>
                                     <th>AKSI</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                           <tbody>
                                 @foreach ($kpelamar as $item)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $item->p_nama }}</td>
-                                    <td>{{ $item->jenis_industri }}</td>
-                                    <td>{{ $item->email_perusahaan }}</td>
-                                    <td>{{ $item->negara }}</td>
-                                    <td>{{ $item->provinsi }}</td>
-                                    <td>{{ $item->kabupaten }}</td>
-                                    <td>{{ $item->kota }}</td>
+                                    <td>{{ $item->tgl_lahir }}</td>
+                                    <td>{{ $item->alamat_sekarang}}</td>
+                                    <td>{{ $item->email }}</td>
+                                    <td>{{ $item->jenis_kelamin }}</td>
+                                    <td>{{ $item->kompetensi}}</td>
+                                    <td>{{ $item->sertifikat}}</td>
+                                    <td>{{ $item->cv}}</td>
+                                    <td>{{ $item->tanggal_verifikasi}}</td>
                                     <td>
                                         <a href="{{ $item->id }}/edit" class="btn btn-warning btn-sm ml-2">EDIT</a>
                                         <form action="{{ $item->id }}" method="POST" class="d-inline">
